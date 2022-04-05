@@ -1,9 +1,11 @@
 package com.evermariano.SBMongoDB;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-public class Adress {
+@AllArgsConstructor
+public class Address {
 
     private String country;
     private String postCode;
