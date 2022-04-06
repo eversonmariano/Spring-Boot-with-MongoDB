@@ -26,6 +26,7 @@ public class SpringBootWithMongoDbApplication {
 
 
 
+    @Bean
     CommandLineRunner runner(StudentRepository studentRepository, MongoTemplate mongoTemplate) {
 
         return args -> {
@@ -53,12 +54,6 @@ public class SpringBootWithMongoDbApplication {
                         System.out.println("Inserting student " + student);
                         studentRepository.insert(student);
                     });
-
-
-
-
-
-
 
         };
     }
